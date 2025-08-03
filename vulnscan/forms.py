@@ -2,7 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 
 """BS is best for this job. We use BS for getting the form data, editing that data, and submitting that data.
-#We could do this job multiple ways; this is the way  know best from research"""
+#We could do this job multiple ways; this is the way I know best from research. We will consider more
+advanced methods overtime if there are better results. For now,  want to keep the project simple to build momentum."""
 def get_forms(url):
     """
     Fetch and parse all forms from a given URL.
