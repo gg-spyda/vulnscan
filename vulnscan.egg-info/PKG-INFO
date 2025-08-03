@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: vulnscan
+Version: 0.1
+Summary: Lightweight CLI tool for detecting basic web vulnerabilities (XSS, SQLi)
+Author: Gjvon Graves
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Security
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: colorama
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# VulnScan
+
+**VulnScan** is a lightweight Python CLI tool for detecting common web application vulnerabilities, including **Cross-Site Scripting (XSS)** and **SQL Injection (SQLi)**. It can scan URLs and forms for potential weaknesses and report reflected payloads.
+
+---
+
+## ðŸš€ Features
+
+- âœ… Detects reflected **XSS** vulnerabilities
+- âœ… Detects basic **SQLi** via error-based responses
+- âœ… Automatically scans and injects into HTML **forms**
+- âœ… Clear and colorized CLI output
+- âœ… Modular and easily extensible code structure
+- âœ… Built with Python 3 and `requests`, `bs4`, and `colorama`
+
+---
+
+## ðŸ“¦ Requirements
+
+Install dependencies using:
+
+```bash
+pip install -r requirements.txt

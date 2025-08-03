@@ -1,0 +1,16 @@
+README.md
+setup.py
+tests/test_sqli.py
+tests/test_xss.py
+vulnscan/__init__.py
+vulnscan/cli.py
+vulnscan/utils.py
+vulnscan.egg-info/PKG-INFO
+vulnscan.egg-info/SOURCES.txt
+vulnscan.egg-info/dependency_links.txt
+vulnscan.egg-info/entry_points.txt
+vulnscan.egg-info/requires.txt
+vulnscan.egg-info/top_level.txt
+vulnscan/scanners/__init__.py
+vulnscan/scanners/sqli.py
+vulnscan/scanners/xss.py
