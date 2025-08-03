@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
+"""BS is best for this job. We use BS for getting the form data, editing that data, and submitting that data.
+#We could do this job multiple ways; this is the way  know best from research"""
 def get_forms(url):
     """
     Fetch and parse all forms from a given URL.
@@ -16,7 +18,7 @@ def get_forms(url):
 def submit_form(form, base_url, payload):
     """
     Submits a form with the given payload in each input.
-    Returns the response.
+    Returns the respons we need.
     """
     action = form.get("action")
     method = form.get("method", "get").lower()
