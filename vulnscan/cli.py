@@ -1,6 +1,10 @@
+#Program starts here. We want to build a very basic CLI for fun and development of our skills. Every day we should
+#learning and making updates.
+
 import argparse
 from vulnscan.scanners import xss, sqli
 
+#This will create our CLI and we will add color later.
 def main():
     parser = argparse.ArgumentParser(
         description="VulnScan - Lightweight Web Vulnerability Scanner"
@@ -32,7 +36,7 @@ def main():
 
     args = parser.parse_args()
 
-    # Run scans
+    #We can run our scans here.
     if args.all or args.xss:
         print("[*] Running XSS tests...")
         xss.scan(args.url)
