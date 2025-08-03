@@ -1,5 +1,5 @@
 import argparse
-from scanners import xss, sqli
+from vulnscan.scanners import xss, sqli
 
 def main():
     parser = argparse.ArgumentParser(
@@ -43,3 +43,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
