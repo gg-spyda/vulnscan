@@ -34,12 +34,6 @@ VulnScan requires Python **3.6 or higher** and the following packages:
 - [`beautifulsoup4`](https://pypi.org/project/beautifulsoup4/)
 - [`colorama`](https://pypi.org/project/colorama/)
 
-To install all dependencies:
-
-```bash
-pip install -r requirements.txt
-
-.
 
 
 ## ⚠️ Legal Disclaimer
@@ -48,3 +42,12 @@ pip install -r requirements.txt
 > Do **not** use this tool on systems you do not own or have written permission to assess.  
 > **Unauthorized scanning may be illegal** under national or international laws.  
 > Use responsibly — you are fully liable for your own actions.
+
+
+
+To install all dependencies:
+
+```bash
+pip install -r requirements.txt
+
+
