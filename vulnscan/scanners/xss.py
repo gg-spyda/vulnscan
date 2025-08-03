@@ -25,7 +25,7 @@ def scan(url: str):
                 print(f"[VULNERABLE] Possible XSS detected with payload: {payload}")
             else:
                 print(f"[OK] No reflection for payload: {payload}")
-
+        #failure
         except requests.exceptions.RequestException as e:
             print(f"[ERROR] Request failed for payload {payload}: {e}")
 
