@@ -4,6 +4,17 @@
 
 ---
 
+---
+
+> ⚠️ **LEGAL DISCLAIMER**  
+> This tool is created strictly for **educational purposes** and **authorized testing only**.  
+> You may **not use VulnScan on systems or websites without explicit permission**.  
+> Unauthorized use of this tool may violate the [Computer Fraud and Abuse Act (CFAA)](https://www.justice.gov/criminal-ccips/computer-fraud-and-abuse-act), local laws, or terms of service agreements.  
+> The developer is **not responsible for misuse or damage** resulting from this tool.
+
+---
+
+
 ## 🚀 Features
 
 - ✅ Detects reflected **XSS** vulnerabilities
@@ -29,3 +40,11 @@ To install all dependencies:
 pip install -r requirements.txt
 
 .
+
+
+## ⚠️ Legal Disclaimer
+
+> VulnScan is provided for **educational and authorized penetration testing purposes only**.  
+> Do **not** use this tool on systems you do not own or have written permission to assess.  
+> **Unauthorized scanning may be illegal** under national or international laws.  
+> Use responsibly — you are fully liable for your own actions.
